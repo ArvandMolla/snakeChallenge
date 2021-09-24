@@ -1,18 +1,46 @@
-let elem1 = [2, 3];
-let elem2 = [2, 4];
+import { numberOfRoutes } from "./main2.js";
 
-const areEqual = (elem1, elem2) => {
-  //   if (elem1.toString() == elem2.toString()) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-
-  if (JSON.stringify(elem1) == JSON.stringify(elem2)) {
-    return true;
-  } else {
-    return false;
-  }
-};
-
-console.log(areEqual(elem1, elem2));
+console.log(
+  "Result of Test1: ",
+  numberOfRoutes(
+    [4, 3],
+    [
+      [2, 2],
+      [3, 2],
+      [3, 1],
+      [3, 0],
+      [2, 0],
+      [1, 0],
+      [0, 0],
+    ],
+    3
+  )
+);
+console.log(
+  "Result of Test2: ",
+  numberOfRoutes(
+    [2, 3],
+    [
+      [0, 2],
+      [0, 1],
+      [0, 0],
+      [1, 0],
+      [1, 1],
+      [1, 2],
+    ],
+    10
+  )
+);
+console.log(
+  "Result of Test3: ",
+  numberOfRoutes(
+    [10, 10],
+    [
+      [5, 5],
+      [5, 4],
+      [4, 4],
+      [4, 5],
+    ],
+    4
+  )
+);
