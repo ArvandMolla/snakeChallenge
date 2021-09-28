@@ -1,7 +1,7 @@
 import { numberOfRoutes } from "./main2.js";
 
 console.log(
-  "Result of Test1: ",
+  "Result of Test1:  ",
   numberOfRoutes(
     [4, 3],
     [
@@ -17,7 +17,7 @@ console.log(
   )
 );
 console.log(
-  "Result of Test2: ",
+  "Result of Test2:  ",
   numberOfRoutes(
     [2, 3],
     [
@@ -32,7 +32,7 @@ console.log(
   )
 );
 console.log(
-  "Result of Test3: ",
+  "Result of Test3:  ",
   numberOfRoutes(
     [10, 10],
     [
